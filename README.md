@@ -8,10 +8,10 @@ Welcome to our R U 420? Our group includes Elizabeth, Stephen, Josh and Michael.
 To be added
 
 # APIs Used
-Faceplusplus
-Strain Api
-Giphy Api
-FOAAS 
+* Faceplusplus
+* Strain Api
+* Giphy Api
+* FOAAS 
 
 # Tasks 
 https://github.com/elizabethbodzy/project-1/issues
