@@ -19,9 +19,20 @@ body {
     font-size: 25px;
   }
 
+  form {
+      margin-left: 300px;
+  }
+
+ 
+
   .logo {
       width: 100px;
       margin-left: 500px;
+  }
+
+  .logo-img-small {
+      width: 50px;
+      background-color: white;
   }
 
   .col-lg-4 {
