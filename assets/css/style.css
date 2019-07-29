@@ -17,6 +17,7 @@ body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 25px;
+    margin-top: 150px;
   }
 
   form {
@@ -28,6 +29,11 @@ body {
   .logo {
       width: 100px;
       margin-left: 500px;
+  }
+
+  .logo-moved {
+    width: 100px;
+      margin-left: 550px;
   }
 
   .logo-img-small {
@@ -54,7 +60,7 @@ body {
     background-color: #343a40;
     background: url("../images/1.jpeg") no-repeat center center;
     background-size: cover;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     
   }
   
@@ -74,7 +80,7 @@ body {
   
   @media (min-width: 768px) {
     header.masthead {
-      padding-top: 12rem;
+      /* padding-top: 12rem; */
       padding-bottom: 12rem;
     }
     header.masthead h1 {
@@ -117,6 +123,59 @@ body {
   .features-icons .features-icons-item:hover .features-icons-icon i {
     font-size: 5rem;
   }
+
+  #accessbox {
+	max-width: 55%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: rgba(255, 255, 255, 1) 12px solid;
+	padding: 5%;
+	margin: 10% auto;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.profile-img {
+	margin: 0 auto 25px;
+	display: block;
+}
+.access-form {
+	margin-top:5%;
+}
+.access-input {
+	width: 20%;
+	background: #000;
+	color: #fff;
+	padding: 1% 2%;
+	text-align: center;
+	margin: 1%;
+	border: #f4f3f3 2px solid;
+	font-size: 27px;
+}
+.access-input-lg {
+	width: 25%;
+	background: #000;
+	color: #fff;
+	padding: 1% 2%;
+	text-align: center;
+	margin: 1%;
+	border: #f4f3f3 2px solid;
+	font-size: 27px;
+}
+.access-btn {
+	width: 20%;
+	background: #715820;
+	color: #fff;
+	padding: 1% 2%;
+	text-align: center;
+	margin: 1%;
+	border: #715820 2px solid;
+	font-size: 27px;
+}
+.access-btn:hover, .access-btn:focus {
+	background-color: #4e3a0e;
+	border: #4e3a0e 2px solid;
+	color: #fff;
+}
   
 
   
