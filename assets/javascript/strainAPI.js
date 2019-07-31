@@ -15,10 +15,18 @@ $.ajax({
 }).then(function(strainResponse){
 
 console.log(strainResponse.positive);
+var positiveReponse = strainResponse.positive;
 
-$('#display-data').append(strainResponse.positive);
+for(i = 0; i < positiveReponse.length; i++ ){
+    
+    var effectDivTag = $('<div>').addClass('effects');
+    var spanTag = $('<h4>').html(positiveReponse[i]).addClass('effectTitle');
+    effectDivTag.prepend(spanTag);
+    $('#display-data').prepend(effectDivTag);
+   // $(effectDivTag).appendTo(selector);
+console.log(positiveReponse[i]);
+};
 });
-
 });};
 
 showEffects();
