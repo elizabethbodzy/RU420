@@ -177,6 +177,23 @@ body {
 	color: #fff;
 }
   
+.clearfix::after
+{
+    content:" ";
+    display: table;
+    clear: both;
+}
+
+.effects{
+  padding: 5px;
+  float: left;
+}
+
+.effectTitle{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: Bold;
+  color: #016b01;
+}
 
   
  
