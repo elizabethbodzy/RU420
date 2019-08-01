@@ -17,16 +17,21 @@ function displayMoodInfo(effects) {
 
     Promise.all(networkRequests).then(function(responses) {
 
-        // for (var i = 0; i < responses.length; i++) {
-        //     var gifDiv = $("<div class='myEffect'>");
+         for (var i = 0; i < responses.length; i++) {
+             var gifDiv = $("<div class='myEffect'>");
+            var spanTag = $('<span>').html(effects[i] + '<br>');
+             var imageUrl = responses[i].data[0].images.fixed_height_small.url;
 
-        //     var imageUrl = responses[i].data[0].images.fixed_height_small.url;
+             var imageTag = "<img src='" + imageUrl + "' alt=''>";
 
-        //     var imageTag = "<img src='" + imageUrl + "' alt=''>";
+             //gifDiv.append(imageTag);
+             //$(".effects").prepend(gifDiv);
 
-        //     gifDiv.append(imageTag);
-        //     $("#gifies").append(gifDiv);
-        // }
+             gifDiv.prepend(spanTag);
+             gifDiv.append(imageTag);
+             $('#display-data').prepend(gifDiv);
+             
+         }
 
     });
     var effectMe = $(this).attr("");
