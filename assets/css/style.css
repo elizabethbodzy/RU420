@@ -195,5 +195,14 @@ body {
   color: #016b01;
 }
 
+.myEffect{
+  float: left;
+  padding: 10px;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #016b01;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
   
  
