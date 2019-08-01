@@ -22,7 +22,7 @@ function showEffects() {
                     .html(positiveReponse[i])
                     .addClass("effectTitle");
                 effectDivTag.prepend(spanTag);
-                $("#display-data").prepend(effectDivTag);
+                //$("#display-data").prepend(effectDivTag);
                 // $(effectDivTag).appendTo(selector);
             
             }
