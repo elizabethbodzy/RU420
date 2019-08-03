@@ -2,9 +2,6 @@
 
 //onclick API call
 function showEffects() {
-    //loadBtn();
-   // $('button').on('click', function(event) {
-        //event.preventDefault();
         $('#display-data').empty();
         var strainId = $(this).attr('strainid');
 
@@ -16,24 +13,42 @@ function showEffects() {
             url: effectsQueryURL,
             method: "GET"
         }).then(function(strainResponse) {
-            var positiveReponse = strainResponse.positive;
-            for (i = 0; i < positiveReponse.length; i++) {
-                var effectDivTag = $('<div>').addClass('effects');
-                var spanTag = $('<h4>')
-                    .html(positiveReponse[i])
-                    .addClass('effectTitle');
-                effectDivTag.prepend(spanTag);
-                //$("#display-data").prepend(effectDivTag);
-                // $(effectDivTag).appendTo(selector);
+            var positiveResponse = strainResponse.positive;
+            var negativeResponse = strainResponse.negative;
+            var medicalResponse = strainResponse.medical;
+                for (i = 0; i < positiveResponse.length; i++) {
+                    var positiveEffectDivTag = $('<div>').addClass('positiveEffects');
+                    var spanPositiveTag = $('<h4>')
+                    .html(positiveResponse[i])
+                    .addClass('positiveEffectTitle');
+                    positiveEffectDivTag.prepend(spanPositiveTag);
+                    //console.log(strainResponse);
+                    };
 
-                console.log(strainResponse);
+                for(i = 0; i < negativeResponse.length; i++ ){
+                    var negativeEffectDivTag = $('<div>').addClass('negativeEffects');
+                    var spanNegativeTag = $('<h4>')
+                    .html(negativeResponse[i])
+                    .addClass('negativeEffectTitle');
+                    negativeEffectDivTag.prepend(spanNegativeTag);
+                    //console.log(strainResponse);
+                    };
+
+                for(i = 0; i < medicalResponse.length; i++){
+                    var medicalEffectDivTag = $('<div>').addClass('medicalEffects');
+                    var spanMedicalTag = $('<h4>')
+                    .html(medicalResponse[i])
+                    .addClass('medicalEffectTitle');
+                    medicalEffectDivTag.prepend(spanMedicalTag);
+                    //console.log(strainResponse);
+                    };
             
-            }
-            displayMoodInfo(positiveReponse);
+                displayMoodInfo(positiveResponse);
+                displayMoodInfo(negativeResponse);
+                displayMoodInfo(medicalResponse);
+
         });
-    //});
-}
+};
 $(document).on('click', 'button', showEffects);
-//showEffects();
 
 
