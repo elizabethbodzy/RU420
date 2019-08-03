@@ -1,20 +1,10 @@
-
-
-$(document).ready(function () {
-    $(".btn").click(function (clicked) {
-        event.preventDefault();
-        // console.log("ive been clicked")
-        return PreviewImage();
-    });
-});
-
-
-
 function PreviewImage() {
+    var age;
     var fileReader = new FileReader();
     fileReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
-    fileReader.onload = function (fileReaderEvent) {
-        $.ajax({
+
+    fileReader.onload = async function (fileReaderEvent) {
+        var response = await $.ajax({
             url: 'https://api-us.faceplusplus.com/facepp/v3/detect',
             method: "POST",
             data: {
@@ -23,13 +13,28 @@ function PreviewImage() {
                 image_base64: fileReaderEvent.target.result,
                 return_attributes: 'emotion,gender,age',
             }
-        }).then(function (response) {
-            console.log(response);
-        });
+        })
+        age = response.faces[0].attributes.age.value;
+        //check if age is 21 over then it would go to home page of our site
 
-    };
+
+        if (age >= 21) {
+            window.location.href = 'index.html';
+        } else {
+            alert("You are not a grown up so here, enjoy this vidoe!")
+            window.location.href = 'https://www.youtube.com/watch?v=XqZsoesa55w';
+        }
+        //else statement 20 or younger alert you are not allowed to accesss out website
+
+    }
+
 };
 
+$("#verifyBtn").click(function (event) {
+    event.preventDefault();
+    PreviewImage();
+});
 
 
-//need to write code where if the age is greater than 21 
+
+
