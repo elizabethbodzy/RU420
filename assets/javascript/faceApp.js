@@ -19,7 +19,7 @@ function PreviewImage() {
 
 
         if (age >= 21) {
-            window.location.href = 'index.html';
+            window.location.href = 'ru420.html';
         } else {
             alert("You are not a grown up so here, enjoy this video!")
             window.location.href = 'https://www.youtube.com/watch?v=XqZsoesa55w';
