@@ -21,7 +21,7 @@ function PreviewImage() {
         if (age >= 21) {
             window.location.href = 'index.html';
         } else {
-            alert("You are not a grown up so here, enjoy this vidoe!")
+            alert("You are not a grown up so here, enjoy this video!")
             window.location.href = 'https://www.youtube.com/watch?v=XqZsoesa55w';
         }
         //else statement 20 or younger alert you are not allowed to accesss out website
