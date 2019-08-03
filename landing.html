@@ -1,62 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RU420 Splash Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>form</title>
 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- required for verify page form -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../RU420/assets/face-app-assets/css/Login-Form-Dark.css">
+    <!------------------------------------------------------- -->
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+    <!------------------------------- required for face plus plus to work SDK Files ------------------------------------->
+    <script type="text/javascript" src="../RU420/assets/facepp_sdk/jquery.min.js"></script>
+    <script type="text/javascript" src="../RU420/assets/facepp_sdk/facepp_sdk.js"></script>
+    <script type="text/javascript" src="../RU420/assets/facepp_sdk/exif.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../RU420/assets/javascript/faceApp.js"></script>
+
 
 </head>
+
 <body>
 
-    <!-- Navigation -->
-  <nav class="navbar navbar-light bg-light static-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"> <img class="logo-moved" src="assets/images/logo.png"></a>
-        </div>
-      </nav>
+    <div class="login-dark">
+        <form method="post">
+            <h2 class="sr-only">Login Form</h2>
+            <p>Please upload a selfie so we can verify if you are 21 years of age or older.</p>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div><input
+                class="border rounded border-primary" type="file" id="uploadImage">
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Verify Age</button></div>
+        </form>
+    </div>
 
-      <header class="masthead text-white text-center">
-            <div class="overlay"></div>
-            <div class="container">
-              <div class="row">
-                <!-- <div class="col-xl-9 mx-auto">
-                </div> -->
-                <!-- <div id="accessbox" class="animated bounceInDown"> <img class="logo-img-small" src="assets/images/logo.png" />
-                    <h3 class="form-text-center">Please enter your date of birth</h3> -->
-                    <!-- Form section-->
-                    <!-- <form action="php/access.php" method="post" class="access-form">
-                      <input type="text" name="yy" class="access-input-lg" placeholder="YYYY" required autofocus>
-                      <input type="text" name="mm" class="access-input" placeholder="MM" required>
-                      <input type="text" name="dd" class="access-input" placeholder="DD" required>
-                      <input type="submit" name="submit"class="access-btn" value="OK" >
-                      <div id="remember" class="checkbox text-center">
-                        <label class="text-center">
-                          <input type="checkbox" value="remember-me">
-                          Remember me </label>
-                      </div>
-                    </form> -->
-                    <!-- Form section-->
-                    <!-- <h3 class="text-center"><i class="fa fa-exclamation-triangle red"></i> You have to be over 21 to enter this site </h3>
-                  </div> -->
-                  <!-- AccessBox section --> 
-                </div>
-                
-                </div>
-              </div>
-            </div>
-          </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
 
-
-      <footer> &copy; SMU Group Project 1 - Michael, Stephen, Josh, & Elizabeth</footer>
-    
-    </body>
-    </html>
+</html>
