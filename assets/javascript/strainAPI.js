@@ -2,10 +2,11 @@
 
 //onclick API call
 function showEffects() {
-    $("button").on("click", function(event) {
+    //loadBtn();
+   // $('button').on('click', function(event) {
         //event.preventDefault();
-        $("#display-data").empty();
-        var strainId = $(this).attr("strainID");
+        $('#display-data').empty();
+        var strainId = $(this).attr('strainid');
 
         var effectsQueryURL =
             "http://strainapi.evanbusse.com/dOdR7S1/strains/data/effects/" +
@@ -17,20 +18,22 @@ function showEffects() {
         }).then(function(strainResponse) {
             var positiveReponse = strainResponse.positive;
             for (i = 0; i < positiveReponse.length; i++) {
-                var effectDivTag = $("<div>").addClass("effects");
-                var spanTag = $("<h4>")
+                var effectDivTag = $('<div>').addClass('effects');
+                var spanTag = $('<h4>')
                     .html(positiveReponse[i])
-                    .addClass("effectTitle");
+                    .addClass('effectTitle');
                 effectDivTag.prepend(spanTag);
                 //$("#display-data").prepend(effectDivTag);
                 // $(effectDivTag).appendTo(selector);
+
+                console.log(strainResponse);
             
             }
             displayMoodInfo(positiveReponse);
         });
-    });
+    //});
 }
-
-showEffects();
+$(document).on('click', 'button', showEffects);
+//showEffects();
 
 
