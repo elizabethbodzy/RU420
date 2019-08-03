@@ -1,6 +1,6 @@
 function loadIndicaBtn(){
     var QueryURL =
-        "http://strainapi.evanbusse.com/dOdR7S1/strains/search/race/indica";
+        "https://strainapi.evanbusse.com/dOdR7S1/strains/search/race/indica";
     $.ajax({
         url: QueryURL,
         method: "GET"
@@ -25,7 +25,7 @@ function loadIndicaBtn(){
 
 function loadSativaBtn(){
     var QueryURL =
-    "http://strainapi.evanbusse.com/dOdR7S1/strains/search/race/sativa";
+    "https://strainapi.evanbusse.com/dOdR7S1/strains/search/race/sativa";
 $.ajax({
     url: QueryURL,
     method: "GET"
@@ -50,7 +50,7 @@ $.ajax({
 
 function loadHybridBtn(){
     var QueryURL =
-    "http://strainapi.evanbusse.com/dOdR7S1/strains/search/race/hybrid";
+    "https://strainapi.evanbusse.com/dOdR7S1/strains/search/race/hybrid";
 $.ajax({
     url: QueryURL,
     method: "GET"

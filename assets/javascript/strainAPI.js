@@ -12,7 +12,7 @@ function showEffects() {
         var strainId = $(this).attr('strainid');
 
         var effectsQueryURL =
-            "http://strainapi.evanbusse.com/dOdR7S1/strains/data/effects/" +
+            "https://strainapi.evanbusse.com/dOdR7S1/strains/data/effects/" +
             strainId +
             "";
         $.ajax({
