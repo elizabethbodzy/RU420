@@ -97,7 +97,7 @@ function displayMedical(effects) {
          }
     });
 };
-Collapse
+
 
 
 
