@@ -58,7 +58,7 @@ body {
   header.masthead {
     position: relative;
     background-color: #343a40;
-    background: url("../images/1.jpeg") no-repeat center center;
+    background: url("../images/RU420homeimg.jfif") no-repeat center center;
     background-size: cover;
     /* padding-top: 8rem; */
     
@@ -176,23 +176,41 @@ body {
 	border: #4e3a0e 2px solid;
 	color: #fff;
 }
-
-
-#imgForm{
-  background-color: rgb(137, 134, 134);
+  
+.clearfix::after
+{
+    content:" ";
+    display: table;
+    clear: both;
 }
 
+.effects{
+  padding: 5px;
+  float: left;
+}
 
+.effectCategory{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: Bold;
+  font-size: 24pt;
+  text-align: left;
+  color: Red;
+  text-decoration-line: underline;
+}
 
+.effectTitle{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: Bold;
+  font-size: 24pt;
+  text-align: left;
+  color: #016b01;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.myEffect{
+  float: left;
+  padding: 10px;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #016b01;
+  font-weight: bold;
+  font-size: 24pt;
+}
