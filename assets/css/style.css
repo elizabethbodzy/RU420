@@ -189,9 +189,20 @@ body {
   float: left;
 }
 
+.effectCategory{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: Bold;
+  font-size: 24pt;
+  text-align: left;
+  color: Red;
+  text-decoration-line: underline;
+}
+
 .effectTitle{
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: Bold;
+  font-size: 24pt;
+  text-align: left;
   color: #016b01;
 }
 
