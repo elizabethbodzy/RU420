@@ -1,6 +1,14 @@
 //onclick API call
 function showEffects() {
-        $('#display-data').empty();
+        $('#display-positive').empty();
+        $('#display-negative').empty();
+        $('#display-medical').empty();
+        var positiveTitle = $('<span>').html('Positive Effects'+'<br>');
+        var negativeTitle = $('<span>').html('Negative Effects'+'<br>');
+        var medicalTitle = $('<span>').html('Medical Effects'+'<br>');
+        $('#display-positive').append(positiveTitle).addClass('effectCategory');
+        $('#display-negative').append(negativeTitle).addClass('effectCategory');
+        $('#display-medical').append(medicalTitle).addClass('effectCategory');
         var strainId = $(this).attr('strainid');
 
         var effectsQueryURL =
@@ -15,10 +23,9 @@ function showEffects() {
             var negativeResponse = strainResponse.negative;
             var medicalResponse = strainResponse.medical;
 
-                displayMoodInfo(positiveResponse);
-                displayMoodInfo(negativeResponse);
-                displayMoodInfo(medicalResponse);
-
+                displayPositive(positiveResponse);
+                displayNegative(negativeResponse);
+                displayMedical(medicalResponse);
         });
 };
 $(document).on('click', 'button', showEffects);
