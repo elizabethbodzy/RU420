@@ -1,3 +1,15 @@
+
+
+$(document).ready(function () {
+    $(".btn").click(function (clicked) {
+        event.preventDefault();
+        // console.log("ive been clicked")
+        return PreviewImage();
+    });
+});
+
+
+
 function PreviewImage() {
     var fileReader = new FileReader();
     fileReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
@@ -18,3 +30,6 @@ function PreviewImage() {
     };
 };
 
+
+
+//need to write code where if the age is greater than 21 
