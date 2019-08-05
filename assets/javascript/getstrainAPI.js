@@ -1,3 +1,10 @@
+function loadGitStrainBtn(){
+    var button = $('<button>');
+    $(button).appendTo('#gitStrainDiv');
+    button.attr('id', 'gitStrainsBtn');
+    $(button).text('Git More Strains');    
+    };
+   
 function loadIndicaBtn(){
     var QueryURL =
         "https://strainapi.evanbusse.com/dOdR7S1/strains/search/race/indica";
@@ -73,7 +80,7 @@ $.ajax({
     });
 };
 
-
+loadGitStrainBtn();
 loadIndicaBtn();
 loadSativaBtn();
 loadHybridBtn();

@@ -214,3 +214,17 @@ body {
   font-weight: bold;
   font-size: 24pt;
 }
+
+#gitStrainsBtn{
+  align-items: center;
+  font-weight: bold;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  justify-content: center;
+  
+}
+
+#gitStrainDiv{
+  text-align: center;
+  margin: 10px;
+}

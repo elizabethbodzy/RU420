@@ -28,6 +28,8 @@ function showEffects() {
                 displayMedical(medicalResponse);
         });
 };
-$(document).on('click', 'button', showEffects);
 
-
+$(document).on('click', '.button', showEffects);
+$(document).on('click', '#gitStrainsBtn', loadSativaBtn);
+$(document).on('click', '#gitStrainsBtn', loadIndicaBtn);
+$(document).on('click', '#gitStrainsBtn', loadHybridBtn);
