@@ -6,10 +6,10 @@ Welcome to R U 420? Our group includes Elizabeth, Stephen, Josh and Michael. Our
 
 # Screenshots/Live Recording
 
-![Age Verification](/images/homepage.png)
-![Home](/inner-page.png)
-![Strain Effects](/effects-page.png)
-![Recording](/recording.gif)
+![](/assets/images/homepage.png)
+![](/assets/images/inner-page.png)
+![](/assets/images/effects-page.png)
+![](/assets/images/recording.gif)
 
 
 # APIs Used
@@ -18,5 +18,5 @@ Welcome to R U 420? Our group includes Elizabeth, Stephen, Josh and Michael. Our
 * Giphy Api
 * FOAAS 
 
-# Tasks 
-https://github.com/elizabethbodzy/project-1/issues
+# Demo Link
+https://elizabethbodzy.github.io/RU420/
