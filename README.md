@@ -7,9 +7,9 @@ Welcome to R U 420? Our group includes Elizabeth, Stephen, Josh and Michael. Our
 # Screenshots/Live Recording
 
 ![Age Verification](/images/homepage.png)
-![Home](/images/inner-page.png)
-![Strain Effects](/images/effects-page.png)
-![Recording](/images/recording.gif)
+![Home](/inner-page.png)
+![Strain Effects](/effects-page.png)
+![Recording](/recording.gif)
 
 
 # APIs Used
