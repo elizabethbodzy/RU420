@@ -15,7 +15,6 @@ Welcome to R U 420? Our group includes Elizabeth, Stephen, Josh and Michael. Our
 * Faceplusplus
 * Strain Api
 * Giphy Api
-* FOAAS 
 
 # Demo Link
 https://elizabethbodzy.github.io/RU420/
